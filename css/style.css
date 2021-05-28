@@ -1,0 +1,142 @@
+*{
+    font-family: Raleway;
+}
+nav{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(61, 119, 138);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+a{
+    cursor: pointer;
+}
+
+.container{
+    padding: 50px 150px;
+    display: flex;
+}
+
+
+/* ********************** NAVIGATION ********************** */
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(241, 151, 33);
+    transition: 0.4s;
+}
+nav i{
+    margin: 0 40px;
+}
+
+
+/* ********************** PRODUCT LIST ********************** */
+
+.product-container{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.cart{
+    width: 25%;
+}
+.card-product{
+    width: 48%;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: wheat;
+}
+.product-price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: rgb(241, 151, 33);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0px 5px 0px 0px;
+}
+.product-image{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.product-butons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-butons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    color: white;
+}
+.product-like-btn, .product-cart-btn{
+    width: 50%;
+}
+.product-like-btn{
+    background-color: rgb(241, 151, 33);
+    border-radius: 0px 0px 0px 5px;
+}
+.product-cart-btn{
+    background-color: rgb(61, 119, 138);
+    border-radius: 0px 0px 5px 0px;
+}
+
+
+/* ********************** CART ********************** */
+.card-product-cart{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border: solid 1px rgb(192, 230, 243);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.cart-product-img{
+    width: 100px;
+    height: 100%;
+    background-color: violet;
+    background-size: cover;
+    background-position: center;
+}
+.cart-infos{
+    padding: 10px 20px;
+    width: 47.5%;
+}
+.cart-trash{
+    color: rgb(61, 119, 138);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cart-recap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.cart-total{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart-btn-order{
+    padding: 10px 20px;
+    background-color: rgb(241, 151, 33);
+    text-decoration: none;
+    color: white;
+}
